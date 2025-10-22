@@ -1,0 +1,1 @@
+AI Code Explainer tool that takes any code snippet and returns clear, beginner-friendly explanations. Along the way, you’ll also learn about React 19’s new features like useActionState and Server Actions, plus best practices for API integration and error handling.
