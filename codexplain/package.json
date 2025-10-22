@@ -1,5 +1,5 @@
 {
-  "name": "codexplain",
+  "name": "codexplain-client",
   "version": "0.0.1",
   "private": true,
   "type": "module",
@@ -22,10 +22,6 @@
     "@types/react": "npm:types-react@rc",
     "@types/react-dom": "npm:types-react-dom@rc",
     "@vitejs/plugin-react": "^4.2.1",
-    "eslint": "^8.57.0",
-    "eslint-plugin-react": "^7.34.1",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-react-refresh": "^0.4.6",
     "postcss": "^8.4.38",
     "tailwindcss": "^4.0.0",
     "rollup": "^4.21.0"
