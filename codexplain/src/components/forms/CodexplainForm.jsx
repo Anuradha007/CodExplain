@@ -1,5 +1,7 @@
 import { useActionState } from "react";
 import { explain } from "../../actions";
+import CodeExplaination from "../CodeExplaination";
+import Error from "../Error";
 
  const CodexplainForm = () => {
     
@@ -27,12 +29,23 @@ import { explain } from "../../actions";
         />
         <button
           type="submit"
+          disabled={isPending}
           className="mt-4 px-6 py-2 rounded-lg bg-blue-600 text-white font-semibold hover:bg-blue-700 transition disabled:opacity-50"
         >
-            Explain Code
+           {
+            isPending ? "Explaining" : "Explain Code"
+           }
         </button>
         </form>
-        
+        {isPending ? (
+        <p className="bg-gray-300 my-3 w-64 p-2 rounded-sm">Thinking...</p>
+      ) : formState?.success ? (
+       <CodeExplaination explanation={formState?.data.explanation} />
+      ) : (
+        formState?.success === false && (
+         <Error error={formState?.error} />
+        )
+      )}
      </div>
    )
  }
