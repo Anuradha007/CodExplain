@@ -1,3 +1,4 @@
+import CodexplainForm from "./forms/CodexplainForm"
 import Header from "./Header"
 
   
@@ -5,6 +6,7 @@ import Header from "./Header"
    return (
      <div className="min-h-screen flex flex-col items-center p-6" >
         <Header />
+        <CodexplainForm />
      </div>
    )
  }
